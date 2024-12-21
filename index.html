@@ -82,6 +82,10 @@
         .signupside {
         outline: 1px solid black;
         flex: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
         }
 
         .logoandtext {
@@ -106,6 +110,48 @@
             margin-top: 20px;
             
         }
+        .righttext {
+            outline: red solid 1px;
+            width: 900px;
+            font-size: 25px;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .footer {
+            flex: 1;
+            outline: yellowgreen solid 1px;
+        }
+        form {
+            outline: blue solid 1px;
+            display: flex;
+            flex: 2;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        form div {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .questioncontainer {
+            outline: navy solid 1px;
+            width: 600px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .questioncontainercontainer {
+            outline: palevioletred solid 1px;
+        }
+
+        button {
+            width: 300px;
+        }
 
         
     </style>
@@ -120,7 +166,54 @@
                 <div class="text">ODIN</div>
             </div>
         </div>
-        <div class="signupside"></div>
+        <div class="signupside">
+            <div class="righttext">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br> Signup now to get started. <br> <br> You know you want to.</div>
+            
+            <form action="#" method="post">
+                <div>Let's do this!</div>
+                <div class="questioncontainercontainer">
+                    <div class="questioncontainer">
+                        <div>
+                            <label for="first_name">First Name</label>
+                            <input type="text" name="first_name" id="first_name">
+                        </div>
+        
+                        <div>
+                            <label for="last_name">Last Name</label>
+                            <input type="text" name="last_name" id="last_name">
+                        </div>
+                        
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+        
+                        <div>
+                            <label for="phone_number">Phone Number</label>
+                            <input type="number" name="phone_number" id="phone_number">
+                        </div>
+        
+                        <div>
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password">
+                        </div>
+        
+                        <div>
+                            <label for="confirm_password">Confirm Password</label>
+                            <input type="password" name="confirm_password" id="confirm_password">
+                        </div>
+                    </div>
+                </div>
+                <button type="submit">Create Account</button>
+                <p>Already have an account? <a href="#">Sign up</a></p>
+
+            </form>
+                
+                    
+                
+            
+            
+        </div>
     </div>
     
     
