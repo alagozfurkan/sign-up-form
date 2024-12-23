@@ -16,6 +16,10 @@
         margin: 0;
         }
 
+        * {
+            outline: hotpink solid 1px;
+        }
+
         body {
         height: 100vh;
         width: 100vw;
@@ -74,19 +78,11 @@
         
         background-image: url(backroungimage.jpg);
         background-size: contain;
-            
-
-
         }
 
         .signupside {
         outline: 1px solid black;
         flex: 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background-color: rgb(229, 235, 230);
-        
         }
 
         .logoandtext {
@@ -109,115 +105,8 @@
             font-family: 'Aldrich', sans-serif;
             font-size: 70px;
             margin-top: 20px;
-            
-        }
-        .righttext {
-            outline: red solid 1px;
-            width: 750px;
-            font-size: 25px;
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-left: 50px;
-            line-height: 1;
-            padding-top: 30px;
-            
         }
         
-        .footer {
-            flex: 1;
-            outline: yellowgreen solid 1px;
-        }
-        form {
-            background-color: rgb(255, 255, 255);
-            outline: blue solid 1px;
-            display: flex;
-            flex: 1.3;
-            flex-direction: column;
-            gap: 10px;
-            width: 800px;
-            
-        }
-
-        form div {
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .questioncontainer {
-            
-            width: 800px;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            gap: 30px;
-            margin-left: 50px;
-            height: 250px;
-        }
-        .questioncontainercontainer {
-            
-            height: 200px;
-            
-        }
-
-        button {
-            width: 300px;
-            margin-left: 50px;
-            margin-top: 50px;
-        }
-        .already {
-            margin-left: 50px;
-        }
-        .lets {
-            margin-left: 50px;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            margin-top: 50px;
-            
-        }
-        p {
-            font-size: 30px;
-        }
-        .rightsidequestion {
-            margin-left: 60px;
-            
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 10px;
-
-            
-        }
-        .leftsidequstion {
-            
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 10px;
-
-        }
-        
-        input {
-            border-radius: 7px;
-            border: 2px solid rgb(184, 189, 194);
-        }
-
-        label {
-            font-size: 12px;
-        }
-
-        input:invalid {
-            border-color: red;
-        }
-        input:hover {
-            border: 2px solid rgb(8, 85, 21);
-        }
-        .footer {
-            flex: 1;
-            width: 700px;
-        }
         
         
     </style>
@@ -232,70 +121,9 @@
                 <div class="text">ODIN</div>
             </div>
         </div>
-        <div class="signupside"> // This side needs to be build from ground up again!!!!!!!!!!!!!!!!!!!!!
-            <div class="righttext">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br> Signup now to get started. <br> <br> You know you want to.</div>
+        <div class="signupside"> 
             
-            <form action="#" method="post">
-                <div class="lets">
-                    <p>Let's do this.</p>
-                </div>
-                <div class="questioncontainercontainer">
-                    <div class="questioncontainer">
-                        <div class="leftsidequstion">
-                            <div>
-                                <label for="first_name">FIRST NAME</label>
-                                <input style="width: 300px" type="text" name="first_name" id="first_name">
-                            </div>
-
-                            <div>
-                                <label for="email">EMAIL</label>
-                                <input type="email" name="email" id="email">
-                            </div>
-
-                            <div>
-                                <label for="password">PASSWORD</label>
-                                <input type="password" name="password" id="password">
-                            </div>
-
-                        </div>
-                        <div class="rightsidequestion">
-                            <div>
-                                <label for="last_name">LAST NAME</label>
-                                <input style="width: 300px" type="text" name="last_name" id="last_name">
-                            </div>
-
-                            <div>
-                                <label for="phone_number">PHONE NUMBER</label>
-                                <input type="number" name="phone_number" id="phone_number">
-                            </div>
-
-                            <div>
-                                <label for="confirm_password">CONFIRM PASSWORD</label>
-                                <input type="password" name="confirm_password" id="confirm_password">
-                            </div>
-                        </div>
-                        
         
-                        
-                        
-                        
-        
-                        
-        
-                        
-        
-                        
-                    </div>
-                </div>
-                
-
-            </form>
-            <button type="submit">Create Account</button>
-            <p class="already">Already have an account? <a href="#">Sign up</a></p>
-           
-                
-            
-            
         </div>
     </div>
     
